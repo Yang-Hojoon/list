@@ -7,93 +7,345 @@
 </head>
 <body>
 
+  <!-- 최상단 (로고,쇼핑_매장,알림)-->
   <header>
     <h1 class="logo">
       <a href="#"><img src="design/logo.PNG" alt="다이소 로고"></a>
     </h1>
 
-    <div class="shopping/shop">
-      <div class="toggle button">
-        <button class="active">쇼핑</button>
-        <button>매장</button>
-      </div>
+    <div class="shopping_shop">
+      <ul class="toggle">
+      <li>
+      <button>쇼핑</button>
+      </li>
+      <li>
+      <button>매장</button>
+      </li>
+      </ul>
+    </div>
 
     <a class="alarm">
-      <button class="alarm">
-        <img src="img/ico_alarm.png" alt="알림">
-      </button>
+      <img src="design/no notification.png" alt="알림">
     </a>
   </header>
 
-  검색창
-    <div class="search">
-      <a href="#" class="search box">
-        <img src="design/search.PNG">
-      </a>
+  <!-- 검색창 -->
+  <div class="search-box">
+    <a href="#"><img src="design/search.PNG" alt="검색"></a>
+  </div>
+
+  <!-- 메인 탭 -->
+  <nav class="main-tab">
+    <ul>
+      <li class="active"><a href="#">홈</a></li>
+      <li><a href="#">신상</a></li>
+      <li><a href="#">랭킹</a></li>
+      <li><a href="#">기획전</a></li>
+    </ul>
+  </nav>
+
+  <!-- 광고배너 -->
+  <div class="banner">
+    <img src="design/advertisement.png" alt="광고 배너">
+  </div>
+
+  <!-- 카테고리 -->
+  <section class="category">
+    <ul>
+      <li><a href="#"><img src="design/c1.png" alt=""><span>살림테마</span></a></li>
+      <li><a href="#"><img src="design/c2.png" alt=""><span>픽업가능</span></a></li>
+      <li><a href="#"><img src="design/c3.png" alt=""><span>배달가능</span></a></li>
+      <li><a href="#"><img src="design/c4.png" alt=""><span>오늘도착</span></a></li>
+      <li><a href="#"><img src="design/c5.png" alt=""><span>이벤트</span></a></li>
+      <li><a href="#"><img src="design/c6.png" alt=""><span>오픈런</span></a></li>
+    </ul>
+  </section>
+
+  <!-- 내 취향 PICK! -->
+  <section class="product">
+    <h2>내 취향 PICK! <a href="#">전체보기 &gt;</a></h2>
+     <ul class="product-list">
+       <li class="product-item">
+         <!--허쉬 초콜릿 칩 미니 쿠키 50g-->
+           <!-- 상품 이미지 영역 -->
+           <div class="product-image">
+             <!-- 상품 이미지 -->
+             <img src="design/허쉬초콜릿.png" alt="허쉬 초콜릿 칩 미니 쿠키 50g">
+             <!-- 상태 아이콘 영역 -->
+             <div class="product-icons">
+             <img src="design/pickup.png" alt="픽업 가능">
+             <img src="design/delivery.png" alt="배달 가능">
+             <img src="design/fast delivery.png" alt="오늘 배송 가능">
+             </div>
+             <!-- 찜하기 아이콘 -->
+             <button class="wishlist">
+             <img src="design/Wishlist.png" alt="찜하기">
+             </button>
+             </div>
+           <!-- 담기 박스 -->
+           <button class="add-cart">
+           <img src="design/in cart box.png" alt="장바구니 있음">
+           </button>
+           <!-- 상품 정보 -->
+           <div class="product-info">
+           <p class="price">1,000원</p>
+           <p class="name">허쉬 초콜릿 칩 미니 쿠키 50g</p>
+           <p class="review">
+           <span>★★★★★</span>
+           <span>(990)</span>
+           </p>
+           </div>      
+         <!--외 7개 상품-->       
+       </li>
+     </ul>  
+
+  <!-- 요즘 쓰기 딱! -->
+  <section class="product">
+    <h2>요즘 쓰기 딱! <a href="#">전체보기 &gt;</a></h2>
+     <ul class="product-list">
+       <li class="product-item">
+         <!--손날로 컬러 핫팩-->
+           <!-- 상품 이미지 영역 -->
+           <div class="product-image">
+             <!-- 상품 이미지 -->
+             <img src="design/핫팩.png" alt="손날로 컬러 핫팩 일반형">
+             <!-- 상태 아이콘 영역 -->
+             <div class="product-icons">
+             <img src="design/pickup.png" alt="픽업 가능">
+             <img src="design/delivery.png" alt="배달 가능">
+             <img src="design/fast delivery.png" alt="오늘 배송 가능">
+             </div>
+             <!-- 찜하기 아이콘 -->
+             <button class="wishlist">
+             <img src="design/Wishlist.png" alt="찜하기">
+             </button>
+             </div>
+           <!-- 담기 박스 -->
+           <button class="add-cart">
+           <img src="design/in cart box.png" alt="장바구니 있음">
+           </button>
+           <!-- 상품 정보 -->
+           <div class="product-info">
+           <p class="price">1,000원</p>
+           <p class="name">손날로 컬러 핫팩 일반형 2개입</p>
+           <p class="review">
+           <span>★★★★★</span>
+           <span>(75)</span>
+           </p>
+           </div>     
+         <!--외 3개 상품--> 
+       </li>
+     </ul>  
+
+  <!-- 지금 뜨는 상품 -->
+  <section class="hot-products">
+    <h2>지금 뜨는 상품</h2>
+    <p>24시간 동안 가장 많이 판매됐어요</p>
+    <ul class="rank-tab">
+      <li><a href="#">1위~5위</a></li>
+      <li><a href="#">6위~10위</a></li>
+      <li><a href="#">11위~15위</a></li>
+      <li><a href="#">16위~20위</a></li>
+    </ul>
+    <ul class="product-list">
+      <li><img src="design/1위 제품.png" alt="1위 상품"></li>
+        <!-- 상품 정보 -->
+         <div class="product-info">
+         <p class="price">5,000원</p>
+         <p class="name">본셉 비타씨 동결 건조 더블샷 앰플 키트</p>
+         <p class="review">
+         <span>★★★★★</span>
+         <span>(990)</span>
+         </p>
+         </div>     
+
+      <li><img src="design/2위 제품.png" alt="2위 상품"></li>
+        <!-- 상품 정보 -->
+         <div class="product-info">
+         <p class="price">3,000원</p>
+         <p class="name">VT 리들샨 100 페이셜 부스팅 퍼스트 앰플 2 ml*6개입</p>
+         <p class="review">
+         <span>★★★★★</span>
+         <span>(9,999)</span>
+         </p>
+         </div>     
+     
+      <li><img src="design/3위 제품.png" alt="3위 상품"></li>
+       <!-- 상품 정보 -->
+         <div class="product-info">
+         <p class="price">5,000원</p>
+         <p class="name">마데카21 테카 솔루션 수딩 미스트 토너 200 ml</p>
+         <p class="review">
+         <span>★★★★★</span>
+         <span>(5,272)</span>
+         </p>
+         </div>     
+     
+      <li><img src="design/4위 제품.png" alt="4위 상품"></li>
+       <!-- 상품 정보 -->
+         <div class="product-info">
+         <p class="price">1,000원</p>
+         <p class="name">에끌라 깨끗한 물티슈 150매 (캡형)</p>
+         <p class="review">
+         <span>★★★★★</span>
+         <span>(9,406)</span>
+         </p>
+         </div>     
+      
+      <li><img src="design/5위 제품.png" alt="5위 상품"></li>
+       <!-- 상품 정보 -->
+         <div class="product-info">
+         <p class="price">5,000원</p>
+         <p class="name">더랩 바이 블랑두 클리어 히알 물광 크림 50 ml손날로 컬러 핫팩 일반형 2개입</p>
+         <p class="review">
+         <span>★★★★★</span>
+         <span>(2,250)</span>
+         </p>
+         </div>     
+
+    </ul>
+  </section>
+
+  <!-- 다시 구매하기 -->
+  <section class="product">
+    <h2>다시 구매하기 <a href="#">전체보기 &gt;</a></h2>
+     <ul class="product-list">
+       <li class="product-item">
+         <!--손날로 컬러 핫팩-->
+           <!-- 상품 이미지 영역 -->
+           <div class="product-image">
+             <!-- 상품 이미지 -->
+             <img src="design/핫팩.png" alt="손날로 컬러 핫팩 일반형">
+             <!-- 상태 아이콘 영역 -->
+             <div class="product-icons">
+             <img src="design/pickup.png" alt="픽업 가능">
+             <img src="design/delivery.png" alt="배달 가능">
+             <img src="design/fast delivery.png" alt="오늘 배송 가능">
+             </div>
+             <!-- 찜하기 아이콘 -->
+             <button class="wishlist">
+             <img src="design/Wishlist.png" alt="찜하기">
+             </button>
+             </div>
+           <!-- 담기 박스 -->
+           <button class="add-cart">
+           <img src="design/in cart box.png" alt="장바구니 있음">
+           </button>
+           <!-- 상품 정보 -->
+           <div class="product-info">
+           <p class="price">1,000원</p>
+           <p class="name">손날로 컬러 핫팩 일반형 2개입</p>
+           <p class="review">
+           <span>★★★★★</span>
+           <span>(75)</span>
+           </p>
+           </div>     
+         <!--외 3개 상품--> 
+       </li>
+     </ul>  
+  
+  <!-- 압도적 가성비 국민득템UP -->
+  <section class="product">
+    <h2>압도적 가성비 국민득템UP <a href="#">전체보기 &gt;</a></h2>
+     <ul class="product-list">
+       <li class="product-item">
+         <!--욕실 청소 스펀지 10개입-->
+           <!-- 상품 이미지 영역 -->
+           <div class="product-image">
+             <!-- 상품 이미지 -->
+             <img src="design/욕실 청소 스펀지.png" alt="욕실 청소 스펀지">
+             <!-- 상태 아이콘 영역 -->
+             <div class="product-icons">
+             <img src="design/pickup.png" alt="픽업 가능">
+             <img src="design/delivery.png" alt="배달 가능">
+             <img src="design/fast delivery.png" alt="오늘 배송 가능">
+             </div>
+             <!-- 찜하기 아이콘 -->
+             <button class="wishlist">
+             <img src="design/wishlist disabled.png" alt="찜하기 비활성화">
+             </button>
+             </div>
+           <!-- 담기 박스 -->
+           <button class="add-cart">
+           <img src="design/add to cart box.png" alt="장바구니에 없음">
+           </button>
+           <!-- 상품 정보 -->
+           <div class="product-info">
+           <p class="price">2,000원</p>
+           <p class="name">욕실 청소 스펀지 10개입</p>
+           <p class="review">
+           <span>★★★★★</span>
+           <span>(2,670)</span>
+           </p>
+           </div>     
+         <!--외 7개 상품--> 
+       </li>
+     </ul>  
+
+  <!-- 생활용품 1,000원 -->
+  <section class="product">
+    <h2>생활용품 1,000원 <a href="#">전체보기 &gt;</a></h2>
+     <ul class="product-list">
+       <li class="product-item">
+         <!--리빙 뽑아쓰는 키친타월 150매입-->
+           <!-- 상품 이미지 영역 -->
+           <div class="product-image">
+             <!-- 상품 이미지 -->
+             <img src="design/리빙 뽑아쓰는 키친타월.png" alt="리빙 뽑아쓰는 키친타월">
+             <!-- 상태 아이콘 영역 -->
+             <div class="product-icons">
+             <img src="design/pickup.png" alt="픽업 가능">
+             <img src="design/delivery unavailable.png" alt="배달 불가능">
+             <img src="design/fast delivery.png" alt="오늘 배송 가능">
+             </div>
+             <!-- 찜하기 아이콘 -->
+             <button class="wishlist">
+             <img src="design/Wishlist.png" alt="찜하기">
+             </button>
+             </div>
+           <!-- 담기 박스 -->
+           <button class="add-cart">
+           <img src="design/add to cart box.png" alt="장바구니에 없음">
+           </button>
+           <!-- 상품 정보 -->
+           <div class="product-info">
+           <p class="price">1,000원</p>
+           <p class="name">리빙 뽑았는 키친타월 150매입</p>
+           <p class="review">
+           <span>★★★★★</span>
+           <span>(7,905)</span>
+           </p>
+           </div>     
+         <!--외 7개 상품--> 
+       </li>
+     </ul>  
+
+  <!-- 하단 -->
+  <footer id="footer">
+    <button>로그아웃</button>
+
+    <div class="footer-section">
+      <div class="online-mall">
+        <h3>온라인 다이소몰</h3>
+        <ul>
+          <li>평일 09:00~18:00 1:1문의</li>
+          <li>공지사항</li>
+          <li>앱장애/신고</li>
+          <li>고객센터</li>
+        </ul>
+      </div>
+
+      <div class="offline-store">
+        <h3>다이소 매장</h3>
+        <ul>
+          <li>평일 09:00~18:00</li>
+          <li>1:1문의</li>
+          <li>고객센터</li>
+          <li>제휴문의</li>
+        </ul>
+      </div>
     </div>
-
-     상단 카테고리 탭
-     <nav class="main-tab">
-      <ul>
-        <li class="active"><a href="#">홈</a></li>
-        <li><a href="#">신상</a></li>
-        <li><a href="#">랭킹</a></li>
-        <li><a href="#">기획전</a></li>
-      </ul>
-     </nav>
-
-      홈
-      <a href="#">HOME</a>
-       <ul class="category">
-         <li><a href="#">살림테마</a></li>
-         <li><a href="#">픽업가능</a></li>
-         <li><a href="#">배달가능</a></li>
-         <li><a href="#">오늘도착</a></li>
-         <li><a href="#">이벤트</a></li>
-         <li><a href="#">오픈런</a></li>
-       </ul>
-
-      신상
-      <a href="#">NEW</a>
-       <ul class="category">
-         <li><a href="#">전체</a></li>
-         <li><a href="#">뷰티/위생</a></li>
-         <li><a href="#">주방용품</a></li>
-         <li><a href="#">청소/욕실</a></li>
-         <li><a href="#">수납/정리</a></li>
-         <li><a href="#">문구/팬시</a></li>
-       </ul>
-
-      랭킹
-      <li>
-       <a href="#">ranking</a>
-         <ul class="category">
-          <li class="active"><a href="#">판매</a></li>
-          <li><a href="#">신상</a></li>
-          <li><a href="#">리뷰</a></li>
-         </ul>
-
-          <ul class="category">
-           <li><a href="#">전체</a></li>
-           <li><a href="#">뷰티/위생</a></li>
-           <li><a href="#">주방용품</a></li>
-           <li><a href="#">청소/욕실</a></li>
-           <li><a href="#">수납/정리</a></li>
-          </ul>
-      </li>
-
-      기획전
-      <section class="tab-content event">
-       <ul class="category">
-         <li><a href="#">전체</a></li>
-         <li><a href="#">MD추천</a></li>
-         <li><a href="#">특별기획</a></li>
-         <li><a href="#">시리즈</a></li>
-         <li><a href="#">시즌</a></li>
-         <li><a href="#">DIYSO</a></li>
-       </ul>
-
-  </main>
+  </footer>
 
 </body>
 </html>
