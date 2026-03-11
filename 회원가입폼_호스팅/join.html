@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+	<script src="js/join_script.js"></script>
+
+</head>
+
+<body>
+
+<div id="join_mem">
+
+  <a href="#" class="back_btn" aria-label="뒤로가기">
+    <img src="image/back.png" alt="뒤로가기">
+  </a>
+
+  <div class="profile">
+    <img src="image/icon.png" alt="프로필">
+    <h2>회원가입</h2>
+    <p>회원가입을 위해 정보를 입력해주세요</p>
+  </div>
+
+<form name="member" action="ab.php" method="post" onsubmit="return validateForm()">
+
+    <fieldset>
+      <legend>회원정보 입력</legend>
+      <label for="id">아이디*</label>
+      <input type="text" name="id" id="id"
+       placeholder="6~10자, 영문/숫자/특수문자를 모두 포함해야 합니다.">
+
+      <label for="name">이름*</label>
+      <input type="text" name="name" id="name">
+
+      <label for="pwd">비밀번호*</label>
+      <input type="password" name="pass" id="pwd"
+       placeholder="8~20자, 영문/숫자/특수문자를 모두 포함해야 합니다.">
+       
+      <label for="pwd1">비밀번호 확인*</label>
+      <input type="password" name="pass_confirm" id="pwd1">
+
+      <label for="ph">전화번호*</label>
+      <input type="tel" name="tel" id="ph">
+
+      <label for="email">이메일주소*</label>
+      <input type="email" name="email" id="email"
+       placeholder="예) example@email.com">
+
+      <label for="addr">주소*</label>
+      <input type="text" name="addr" id="addr">
+    </fieldset>
+
+    <fieldset>
+      <legend>약관 및 동의사항</legend>
+
+      <label>
+        <input type="checkbox">전체동의
+      </label>
+
+      <label>
+        <input type="checkbox">(필수) 이용약관 동의
+      </label>
+
+      <label>
+        <input type="checkbox">(필수) 개인정보 동의
+      </label>
+
+      <label>
+        <input type="checkbox">(선택) SNS수신 동의
+      </label>
+    </fieldset>
+
+    <div id="button">
+      <button type="button" class="btn_black">돌아가기</button>
+      <button type="submit" class="btn_blue">가입하기</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
